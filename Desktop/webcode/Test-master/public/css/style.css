@@ -1,0 +1,485 @@
+:root {
+    --themcolor: #1E90FF;
+    --secondsvg: #FFD54F;
+    --firstsvg: #4CAF50;
+    --snow: #FFFFFF;
+    --black: #2C3335;
+    --paragraph: #616C6F;
+}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+/* *************************************************************** */
+/* starting Of Navigation */
+.nav-wrapper {
+    background-color: #1E90FF;
+}
+
+.brand-logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem !important;
+    font-weight: 400;
+}
+
+.logo-text {
+    font-size: 25px !important;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.center-text {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#click-icon {
+    list-style-type: none;
+}
+
+#click-icon i {
+    position: absolute !important;
+    top: 0;
+    left: 20px !important;
+
+}
+
+.nav-wrapper i {
+    position: relative;
+    left: 15% !important;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 30px !important;
+}
+
+/* *************************************************************** */
+/* Ending Of Navigation */
+
+
+/* *************************************************************** */
+/* Starting Of Sidedrawer */
+
+.side-nav {
+    width: 120px;
+    opacity: 0.9;
+    transition-delay: 0.2s !important;
+    transition-timing-function: linear;
+    transition: 0.2s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.sidemenu-item:hover {
+    background-color: var(--themcolor);
+
+}
+
+.sidemenu-item:hover .material-icons,
+.sidemenu-item:hover .sidemenu-title {
+    color: white !important;
+
+}
+
+.sidemenu-link {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.sidemenu-item i {
+    color: #757575;
+    font-size: 25px;
+    position: relative;
+    padding: 20px !important;
+
+}
+
+.sidemenu-item span {
+    color: #757575;
+    font-size: 15px !important;
+    text-decoration: none;
+    display: block !important;
+    margin-top: -15px !important;
+    padding-bottom: 15px !important;
+}
+
+/* Ending Of Sidedrawer */
+/* *************************************************************** */
+
+/* Starting Of Home Page css */
+/* *************************************************************** */
+
+
+
+.card-content i {
+    color: var(--themcolor);
+    font-size: 70px;
+}
+
+.card {
+    height: 100% !important;
+}
+
+.User,
+.devloper {
+    color: #757575;
+    font-size: 0.9375rem !important;
+    position: absolute;
+    right: 1.25rem;
+    top: 0.625rem;
+}
+
+
+.num {
+    color: #757575;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.svg-icon_1 {
+    height: 100%;
+    width: 100%;
+    fill: var(--firstsvg);
+}
+
+.svg-icon_2 {
+    height: 100%;
+    width: 100%;
+    fill: var(--secondsvg);
+}
+
+.svg-icon_3 {
+    height: 100%;
+    width: 100%;
+    fill: var(--themcolor);
+}
+
+/*logo images*/
+/*logo*/
+.img-responsive {
+    height: 18rem !important;
+    width: 18rem !important;
+    margin-bottom: 2rem;
+
+}
+
+/*media for small scree*/
+@media (max-width:600px) {
+
+    .nav-wrapper i {
+        position: relative;
+        left: 3% !important;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+
+    .side-nav {
+        margin: 0.875px 0px;
+    }
+
+    .card-section {
+        margin-right: 0.2rem;
+    }
+}
+
+
+/* Ending Of Home Page css */
+/* *************************************************************** */
+
+/* Starting Of Footer css */
+/* *************************************************************** */
+
+.footer {
+    background-color: var(--themcolor);
+    border: 1px solid transparent;
+}
+
+footer h6 {
+    font-size: 1.3rem !important;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.9rem !important;
+    text-align: center;
+
+}
+
+.footer i {
+    color: #FF3031;
+    font-size: 1rem;
+
+}
+
+/* Ending Of Footer css */
+/* *************************************************************** */
+
+.card {
+    justify-content: center !important;
+    align-content: center !important;
+    display: flex !important;
+    margin: 1rem;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.services-button {
+    margin-top: 1rem !important;
+    border: 1px solid var(--themcolor);
+    background-color: var(--snow);
+    border-radius: 1rem;
+    padding: 0rem 3rem;
+    color: var(--black);
+    transition: all 150ms ease-in;
+}
+
+.services-header {
+    font-weight: bold !important;
+    font-size: 1.4rem !important;
+    transition: all 150ms ease-in;
+
+}
+
+.services-summary {
+    color: var(--paragraph);
+}
+
+.card:hover .services-button {
+    background-color: var(--themcolor);
+    color: var(--snow) !important;
+}
+
+.card:hover .services-header {
+    color: var(--themcolor) !important;
+}
+
+.services-icon {
+    font-size: 2.5rem !important;
+}
+
+.service-container {
+    margin: 2rem 2rem;
+}
+
+@media (max-width:600px) {
+    .service-container {
+        margin: 0;
+    }
+}
+
+/* ************************************** */
+/* Error Page */
+
+
+
+.error {
+    height: 100%;
+    width: 100%;
+
+}
+
+.error-heading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h4 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.header p {
+    font-weight: 500;
+    font-size: 1.0rem;
+
+}
+
+.header-img img {
+    height: 25rem;
+}
+
+/* login page */
+
+.formcenter {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.img-lg {
+    height: 12rem !important;
+
+}
+
+.img-lg img {
+    height: 100%;
+}
+
+
+
+input:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red;
+}
+
+input:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+#icon,
+#icons {
+    margin-top: 10px !important;
+}  
+
+.input-field {
+    border: 1px solid black !important;
+    padding: 5px !important;
+    margin: -2px !important;
+    width: 20rem !important;
+    
+}
+
+.admin h6 {
+    font-weight: 700;
+}
+
+button {
+    background-color: #fefefe;
+    color: #1e90ff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 50px;
+    border-color: #1e90ff;
+}
+
+button:hover {
+    background-color: var(--themcolor);
+    color: white;
+
+ } 
+/* input[type="text"]{
+    outline: none !important;
+    border: 1px solid white !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin: 0rem !important;
+}
+input[type="text"]:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+} */
+
+/*login end */
+
+/*---------usercode--------------*/
+.user-section {
+    height: 100%;
+    width: 95%;
+
+
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.block-section .row {
+    background-color: #ECECEC;
+    max-width: 95%;
+
+}
+
+
+.block-section {
+    width: 100%;
+    height: auto;
+
+}
+
+.row-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.row-content div:nth-child(1) {
+    display: flex;
+    flex-grow: 20;
+    flex-basis: 200px;
+    color: var(--themcolor);
+    font-weight: 400;
+
+}
+
+.row-content div:nth-child(2) {
+    flex-grow: 1;
+}
+
+.row-content div:nth-child(3) {
+    flex-grow: 1;
+}
+
+/*  
+.row-content div:nth-child(4) {
+    flex-grow: 0;
+
+} */
+
+/*content*/
+.row-content p {
+    font-size: 1.2rem;
+}
+
+.row-content label {
+    margin: 0px 10px;
+}
+
+.row-content .btn {
+
+    padding: 0px 30px !important;
+    background-color: #1E90FF;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkbox-blue[type="checkbox"].filled-in:checked+span:after {
+    border: none solid var(--themcolor);
+    background-color: var(--themcolor);
+
+}
+
+.block {
+    color: #E81E61 !important;
+    font: 800;
+    display: flex;
+    justify-content: baseline;
+    font-size: 1.2rem !important;
+
+}
+
+.Admin {
+    color: green !important;
+    font: 800;
+    display: flex;
+    justify-content: baseline;
+    font-size: 1.2rem !important;
+
+}
